@@ -1,6 +1,6 @@
 <p align="center"><img width="500px" align="center" src="https://user-images.githubusercontent.com/54639269/89223832-dd796380-d5ad-11ea-9a39-fc852538ca13.png"></img></p>
 
-<p align="center">Projeto de uma plataforma de ensino feito em React Native utilizando Typescript durante a <a src="https://storage.googleapis.com/golden-wind/nextlevelweek/Apostila-NLW2.pdf"> NLW (Next Level Week) </a>edição Nº 2.</p>
+<p align="center">Projeto de uma plataforma de ensino feito em React Native utilizando Typescript durante a <a src="https://storage.googleapis.com/golden-wind/nextlevelweek/Apostila-NLW2.pdf"> NLW (Next Level Week) 🚀</a>edição Nº 2.</p>
 
 ### 📥 Requirements
 
