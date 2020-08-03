@@ -51,11 +51,12 @@
 }
 
 .buttons-container a:first-child{
-    margin-right: 1.6rem;
+    /* margin-right: 1.6rem; */
 }
 
 .buttons-container a img{
     width: 4rem;
+    margin-right: 2.4rem;
 }
 
 .buttons-container a.study {
@@ -72,10 +73,6 @@
 
 .buttons-container a.give-classes:hover {
     background: var(--color-secundary-dark);
-}
-
-.buttons-container a img {
-    margin-right: 2.4rem;
 }
 
 .total-connections {
