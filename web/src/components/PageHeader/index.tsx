@@ -16,7 +16,7 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) =>{
         <header className="page-header">
             <div className="top-bar-container">
                 <Link to="/">
-                    <img src={backIcon} alt="voltar"/>
+                    <img src={backIcon} alt="back"/>
                 </Link>
                 <img src={logoIcon} alt="Proffy"/>
             </div>

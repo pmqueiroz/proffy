@@ -8,18 +8,18 @@ import './style.css'
 function TeacherList(){
     return (
         <div id="page-teacher-list" className="container">
-            <PageHeader title="Estes são os proffys disponíveis.">
+            <PageHeader title="These are the available proffys.">
                 <form id="search-teachers">
                     <div className="input-block">
-                        <label htmlFor="subject">Matéria</label>
+                        <label htmlFor="subject">Subject</label>
                         <input type="text" id="subject"/>
                     </div>
                     <div className="input-block">
-                        <label htmlFor="week-day">Dia da semana</label>
+                        <label htmlFor="week-day">Week Day</label>
                         <input type="text" id="week-day"/>
                     </div>
                     <div className="input-block">
-                        <label htmlFor="time">Hora</label>
+                        <label htmlFor="time">Hour</label>
                         <input type="text" id="time"/>
                     </div>
                 </form>
