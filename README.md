@@ -30,9 +30,9 @@
         * ~~Mobile~~
     * [Running](#Running)
 * [Issues](#Issues-)
-    * ~~Report~~
+    * [Report](#Report)
     * ~~Trouble Shooting~~
-* ~~Contributing~~
+* [Contributing](#Contributing)
 * [License](#License)
 
 ### Getting Started 🚀
@@ -121,6 +121,13 @@ $ yarn start
 #### Report
 
 In case you are having any problem do not shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues) session.
+
+### Contributing
+
+There are many forms to contribute with the project, first of all you can give this github repo a Star.
+
+If you want do help with the code clone this repository make your changes and send a Pull Request that will be analyzed and approved if it helps with the project
+
 
 ### License 📝
 This project is under the MIT license. See the LICENSE for more information.
