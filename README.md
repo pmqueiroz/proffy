@@ -32,8 +32,8 @@
 * [Issues](#Issues-)
     * [Report](#Report)
     * ~~Trouble Shooting~~
-* [Contributing](#Contributing)
-* [License](#License)
+* [Contributing](#Contributing-)
+* [License](#License-)
 
 ### Getting Started 🚀
 
@@ -120,9 +120,9 @@ $ yarn start
 
 #### Report
 
-In case you are having any problem do not be shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues) session.
+In case you are having any problem do not be shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues/) session.
 
-### Contributing
+### Contributing 🤝 
 
 There are many forms to contribute with the project, first of all you can give this github repo a Star.
 
