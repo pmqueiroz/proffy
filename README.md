@@ -126,7 +126,28 @@ In case you are having any problem do not be shy to report to us in [Issues](htt
 
 There are many forms to contribute with the project, first of all you can give this github repo a Star.
 
-If you want do help with the code clone this repository make your changes and send a Pull Request that will be analyzed and approved if it helps with the project
+If you want do help with the code follow the steps bellow
+
+```ps
+# Fork using GitHub official command line
+# If you don't have the GitHub CLI, use the web site to do that.
+$ gh repo fork pmqueiroz/proffy
+
+# Clone your fork
+$ git clone {your-fork-url}
+$ chdir proffy
+
+# Create a branch with your feature
+$ git checkout -b {branch-name}
+
+# Make the commit with your changes
+$ git commit -m 'Feat: {feature-name}'
+
+# Send the code to your remote branch
+$ git push origin {branch-name}
+```
+
+Then send a Pull Request that will be analyzed and approved if it helps with the project
 
 
 ### License 📝
