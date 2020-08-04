@@ -26,10 +26,10 @@
     * [Cloning](#Cloning)
     * [Requirements](#Requirements)
         * [Web](#Web)
-        * ~~Server~~
+        * [Server](#Server)
         * ~~Mobile~~
-    * ~~Running~~
-* ~~Issues~~
+    * [Running](#Running)
+* [Issues](#Issues-)
     * ~~Report~~
     * ~~Trouble Shooting~~
 * ~~Contributing~~
@@ -42,6 +42,7 @@
 ```ps
 # Clone the repository using git
 $ git clone https://github.com/pmqueiroz/proffy.git
+
 # Access the project folder
 $ chdir proffy
 ```
@@ -63,9 +64,63 @@ $ yarn install
 >The above command will install all third party dependencies user. If you want to install manually all the dependencies follow the steps bellow
 
 ```ps
+# Entering on web directory
 $ chdir web
+
+# Installing depencies
 $ yarn add @types/react-router-dom -D
 ```
+
+##### Server 
+
+This project use third party dependencies that need to be installed, use that command to install all needed dependencies
+
+```ps
+$ chdir server
+$ yarn install
+```
+
+>The above command will install all third party dependencies user. If you want to install manually all the dependencies follow the steps bellow
+
+```ps
+# Entering on server directory
+$ chdir server
+
+# Installing depencies
+$ yarn add @types/cors -D
+$ yarn add @types/express -D
+$ yarn add ts-node-dev -D
+$ yarn add knex
+$ yarn add sqlite3
+```
+
+#### Running
+
+To start the Web Server run the command
+
+```ps
+# Entering on web directory
+$ chdir web
+
+# Run the web server
+$ yarn start
+```
+
+To start the Back Server run the command
+
+```ps
+# Entering on Server directory
+$ chdir server
+
+# Run the Back Server
+$ yarn start
+```
+
+### Issues 🐛
+
+#### Report
+
+In case you are having any problem do not shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues) session.
 
 ### License 📝
 This project is under the MIT license. See the LICENSE for more information.
