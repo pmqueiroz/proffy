@@ -2,9 +2,11 @@
     Thank you for reading this
     If you´re having any problem with this project please contact in the issues session
 -->
-<p align="center">
+
+
+<div align="center">
     <img width="500px" align="center" src="https://user-images.githubusercontent.com/54639269/89223832-dd796380-d5ad-11ea-9a39-fc852538ca13.png"></img>
-</p>
+</div>
 
 <p align="center">
     Online teaching platform made with React Native using Typescript during the<a src="https://nextlevelweek.com"> NLW (Next Level Week) #02</a>🚀
@@ -13,13 +15,14 @@
 
 
 
-<p align="center">
+<div align="center">
     <a src="https://github.com/pmqueiroz/proffy/blob/master/LICENSE"><img src="https://img.shields.io/github/license/pmqueiroz/proffy?color=%238257E5"></img></a>
     <img src="https://img.shields.io/github/stars/pmqueiroz/proffy?color=8257E5&logo=github"></img>
     <img src="https://img.shields.io/github/last-commit/pmqueiroz/proffy?color=%238257E5"></img>
     <a src="https://www.codacy.com/manual/pmqueiroz/proffy?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=pmqueiroz/proffy&amp;utm_campaign=Badge_Grade"><img src="https://img.shields.io/netlify/b4d3ee80-98f0-42d0-b3d0-13879c811a00?color=%238257E5"></img></a>
-    <a src="https://pmqueiroz-proffy.netlify.app"><img src="https://app.codacy.com/project/badge/Grade/b2d32fa731984f3e9c3eaa814861c9db"></img></a>
-</p>
+    <!-- <a src="https://pmqueiroz-proffy.netlify.app"><img src="https://app.codacy.com/project/badge/Grade/b2d32fa731984f3e9c3eaa814861c9db"></img></a> -->
+</div>
+
 
 ### Content
 * [Getting Started](#Getting-Started-)
