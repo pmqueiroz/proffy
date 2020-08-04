@@ -1,4 +1,4 @@
-:root{
+:root {
     --color-background: #F0F0F7;
     --color-primary-lighter: #9871F5;
     --color-primary-light: #916BEA;
@@ -20,21 +20,21 @@
     font-size: 60%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body, #root{
+html, body, #root {
     height: 100vh;
 }
 
-body{
+body {
     background: var(--color-background);
 }
 
-#root{
+#root {
     display: flex;
     align-items: center;
     justify-content: center;

@@ -1,4 +1,4 @@
-#page-landing{
+#page-landing {
     width: 100vw;
     height: 100vh;
 
@@ -10,33 +10,33 @@
     background-color: var(--color-primary);
 }
 
-.logo-container img{
+.logo-container img {
     height: 10rem;
 }
 
-.hero-image{
+.hero-image {
     width: 100%;
 }
 
-.logo-container{
+.logo-container {
     text-align: center;
     margin-bottom: 3.2rem;
 }
 
-.logo-container h2{
+.logo-container h2 {
     font-weight: 500;
     font-size: 2.4rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
 }
 
-.buttons-container{
+.buttons-container {
     display: flex;
     justify-content: center;
     margin: 3.2rem 0;
 }
 
-.buttons-container a{
+.buttons-container a {
     width: 30rem;
     height: 10.4rem;
     border-radius: 0.8rem;
@@ -50,11 +50,11 @@
     transition: background-color 0.2s;
 }
 
-.buttons-container a:first-child{
+.buttons-container a:first-child {
     /* margin-right: 1.6rem; */
 }
 
-.buttons-container a img{
+.buttons-container a img {
     width: 4rem;
     margin-right: 2.4rem;
 }
@@ -87,7 +87,7 @@
     margin-left: 0.8rem;
 }
 
-@media (min-width: 1100px){
+@media (min-width: 1100px) {
     #page-landing-content {
         max-width: 1100px;
         display: grid;
@@ -99,7 +99,7 @@
         ;
     }
 
-    .logo-container{
+    .logo-container {
         grid-area: logo;
         align-self: center;
         text-align: left;
