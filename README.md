@@ -61,10 +61,10 @@ $ chdir web
 $ yarn install
 ```
 
->The above command will install all third party dependencies user. If you want to install manually all the dependencies follow the steps bellow
+>The above command will install all third party dependencies used. If you want to install manually all the dependencies follow the steps bellow
 
 ```ps
-# Entering on web directory
+# Entering in web directory
 $ chdir web
 
 # Installing depencies
@@ -80,10 +80,10 @@ $ chdir server
 $ yarn install
 ```
 
->The above command will install all third party dependencies user. If you want to install manually all the dependencies follow the steps bellow
+>The above command will install all third party dependencies used. If you want to install manually all the dependencies follow the steps bellow
 
 ```ps
-# Entering on server directory
+# Entering in server directory
 $ chdir server
 
 # Installing depencies
@@ -99,7 +99,7 @@ $ yarn add sqlite3
 To start the Web Server run the command
 
 ```ps
-# Entering on web directory
+# Entering in web directory
 $ chdir web
 
 # Run the web server
@@ -109,7 +109,7 @@ $ yarn start
 To start the Back Server run the command
 
 ```ps
-# Entering on Server directory
+# Entering in Server directory
 $ chdir server
 
 # Run the Back Server
@@ -120,7 +120,7 @@ $ yarn start
 
 #### Report
 
-In case you are having any problem do not shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues) session.
+In case you are having any problem do not be shy to report to us in [Issues](https://github.com/pmqueiroz/proffy/issues) session.
 
 ### Contributing
 
@@ -130,4 +130,4 @@ If you want do help with the code clone this repository make your changes and se
 
 
 ### License 📝
-This project is under the MIT license. See the LICENSE for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/pmqueiroz/proffy/blob/master/LICENSE) for more information.
