@@ -14,7 +14,7 @@ function TeacherList(){
                 <form id="search-teachers">
                     <Select 
                         name="subject" 
-                        label="Subject" 
+                        label="Subj ect" 
                         options={[
                             { value: 'Literature', label: 'Literature'},
                             { value: 'Speech', label: 'Speech'},
