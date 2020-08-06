@@ -17,6 +17,10 @@ function Landing() {
         navigate('GiveClasses');
     }
 
+    function hadleNavigateToStudyPage(){
+        navigate('Study');
+    }
+
     return (
         <View style={styles.container}>
             <Image source={landingImg} style={styles.banner}/>
@@ -26,7 +30,10 @@ function Landing() {
                 <Text style={styles.titleBold}>What do you want to do?</Text>
             </Text>
             <View style={styles.buttonsContainer}>
-                <RectButton style={[styles.button, styles.buttonPrimary]}>
+                <RectButton 
+                    onPress={hadleNavigateToStudyPage}
+                    style={[styles.button, styles.buttonPrimary]}
+                >
                     <Image source={studyIcon}/>
                     <Text style={styles.buttonText}>Study</Text>
                 </RectButton>
