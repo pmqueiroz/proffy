@@ -98,6 +98,13 @@ $ yarn add @types/react-router-dom -D
 $ yarn add axios
 ```
 
+To start the server you need the database, to make migrations use the command:
+
+```
+$ yarn knex:migrate
+```
+>The above command is a custom command made on `package.json` file. (Ln 8, Col 5)
+
 ##### Server 
 
 This project use third party dependencies that need to be installed, use that command to install all needed dependencies
