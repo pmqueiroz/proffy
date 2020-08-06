@@ -11,6 +11,7 @@
 
 # production
 /web//build
+*sqlite
 
 # misc
 /web/.DS_Store
@@ -22,4 +23,3 @@
 /web/npm-debug.log*
 /web/yarn-debug.log*
 /web/yarn-error.log*
-
