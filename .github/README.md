@@ -55,7 +55,7 @@
     * [Requirements](#Requirements)
         * [Web](#Web)
         * [Server](#Server)
-        * ~~Mobile~~
+        * [Mobile](#Mobile)
     * [Running](#Running)
 * [Issues](#Issues-)
     * [Report](#Report)
