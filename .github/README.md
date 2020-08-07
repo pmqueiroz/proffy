@@ -156,6 +156,7 @@ $ expo install react-native-gesture-handler react-native-reanimated react-native
 $ yarn add @react-navigation/stack
 $ yarn add @react-navigation/bottom-tabs
 $ yarn add axios
+$ expo install @react-native-community/async-storage
 ```
 
 #### Running
