@@ -40,7 +40,6 @@
     
 [![License][license-badge]][license-url]
 ![Git Stars][star-badge]
-![Last Commit][last-commit-badge]
 [![Netfly Stats][netfly-badge]][netfly-url]
 [![Netfly Stats][proffy-apk-badge]][proffy-apk-url]
 ![NLW Stats][nlw-badge]
