@@ -1,0 +1,65 @@
+#page-login-landing {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-text-in-primary);
+    background-color: var(--color-primary);
+}
+
+.login-logo img {
+    height: 10rem;
+}
+
+.login-logo {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.login-logo h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+
+.login-buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+}
+
+.login-buttons-container a {
+    width: 20rem;
+    height: 7rem;
+    border-radius: 0.8rem;
+    margin-right: 1.6rem;
+    font: 700 2.0rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: background-color 0.2s;
+}
+
+.login-buttons-container a img {
+    width: 4rem;
+    margin-right: 2.4rem;
+}
+
+.login-total-connections {
+    font-size: 1.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-total-connections img {
+    margin-left: 0.8rem;
+}

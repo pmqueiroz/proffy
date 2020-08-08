@@ -1,17 +1,21 @@
-import React, { FormEvent } from 'react';
+import React, { FormEvent, useContext } from 'react';
+import { useAuth } from '../../contexts/auth';
 
 import Input from '../../components/Input';
 
 import logoImg from '../../assets/images/logo.svg';
-import backgroundImg from '../../assets/images/success-background.svg';
+// import backgroundImg from '../../assets/images/success-background.svg';
 
 import './style.css';
 
 function Login() {
+    const { signed, signIn } = useAuth();
 
-    function handleCreateAccount(e: FormEvent){
+    console.log(signed);
+
+    function handleSignIn(e: FormEvent){
         e.preventDefault();
-        console.log('Created Account');
+        signIn();
     }
 
     return (
@@ -30,7 +34,7 @@ function Login() {
                 </div>
                 <div className="login-form">
                         <fieldset>
-                            <form onSubmit={handleCreateAccount}>
+                            <form onSubmit={handleSignIn}>
                                 <header>
                                     <legend>Login</legend>
                                     <a href="#">Sign Up</a> 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom'
 
 import logoImg from '../../assets/images/logo.svg';
@@ -6,6 +6,7 @@ import ladingImg from '../../assets/images/landing.svg';
 import studyIcon from '../../assets/images/icons/study.svg';
 import giveClassesIcon from '../../assets/images/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/images/icons/purple-heart.svg';
+import { useAuth } from '../../contexts/auth';
 
 import api from '../../services/api';
 
@@ -13,6 +14,12 @@ import './style.css';
 
 function Landing() {
     const [totalConnections, setTotalConnections] = useState(0);
+
+    const { user, signOut } = useAuth();
+
+    function handleSignOut() {
+        signOut();
+    }
 
     useEffect(() => {
         api.get('connections').then(response => {
@@ -46,6 +53,7 @@ function Landing() {
                         <img src={giveClassesIcon} alt="Give Lessons"/>
                         Teach
                     </Link>
+                <button onClick={signOut} type="button">{user?.name}{" "}Log Out</button>
                 </div>
                 <span className="total-connections">
                     Total of {totalConnections} connections made  

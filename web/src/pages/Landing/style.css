@@ -10,12 +10,12 @@
     background-color: var(--color-primary);
 }
 
-.logo-container img {
-    height: 10rem;
-}
-
 .hero-image {
     width: 100%;
+}
+
+.logo-container img {
+    height: 10rem;
 }
 
 .logo-container {
