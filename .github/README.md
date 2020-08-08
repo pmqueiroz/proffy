@@ -61,6 +61,7 @@
     * [Report](#Report)
     * ~~Trouble Shooting~~
 * [Contributing](#Contributing-)
+* [Todo](#Todo-)
 * [License](#License-)
 
 ### Getting Started 🚀
@@ -223,6 +224,21 @@ $ git push origin {branch-name}
 ```
 
 Then send a Pull Request that will be analyzed and approved if it helps with the project
+
+### Todo 📌
+
+Version 2.0 Features
+
+- [x] Splash screen
+- [ ] Extended layout
+- [ ] User auth
+- [ ] Password recovery
+- [ ] Teacher profile
+- [ ] Pagination of classes result
+- [ ] Show teacher schedule hours
+- [ ] Save favorite teachers
+- [ ] User logout
+- [ ] Deploy
 
 
 ### License 📝
