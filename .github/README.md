@@ -31,7 +31,7 @@
 
 <br>
 <p align="center">
-    Online teaching platform made with React Native using Typescript during the<a src="https://nextlevelweek.com"> NLW (Next Level Week) #02</a>🚀
+    Online teaching platform made with React and React Native using Typescript during the<a src="https://nextlevelweek.com"> NLW (Next Level Week) #02</a>🚀
 </p>
 
 
