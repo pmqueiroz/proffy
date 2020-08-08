@@ -230,7 +230,7 @@ Then send a Pull Request that will be analyzed and approved if it helps with the
 Version 2.0 Features
 
 - [x] Splash screen
-- [ ] Extended layout
+- [x] Extended layout
 - [ ] User auth
 - [ ] Password recovery
 - [ ] Teacher profile

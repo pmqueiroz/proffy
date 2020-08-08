@@ -1,146 +1,144 @@
 #page-login {
     width: 100vw;
     height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     color: var(--color-text-in-primary);
+    background-color: var(--color-background);
+}
+
+#page-login-content{
+    display: flex;
+    flex-direction: column;
     background-color: var(--color-primary);
 }
 
-.logo-container img:first-child {
+#page-login-content .login-logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: var(--color-text-in-primary);
+    padding: 1.6rem 0;
+    margin: 8rem 0;
+}
+
+.login-logo-container img {
     height: 10rem;
 }
 
-.logo-container img + img{
+.login-logo-container > img{
     /* position: absolute;
     transform: rotate(90deg); */
-    position: absolute;
-    z-index: 0;
     height: 40rem;
 }
 
-.hero-image {
-    width: 100%;
-}
-
-.logo-container {
-    text-align: center;
-    margin-bottom: 3.2rem;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo-container h2 {
+.login-logo-container h2 {
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
 }
 
-.buttons-container {
+.login-form {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    margin: 3.2rem 0;
+    background-color: var(--color-background);
 }
 
-.buttons-container a {
-    width: 30rem;
-    height: 10.4rem;
+.login-form .input-container{
+    width: 100%;
+}
+
+.input-block{
+    width: 100%;
+}
+
+.login-form fieldset {
+    border: 0;
+    padding: 0 2.4rem;
+    width: 100%;
+}
+
+.login-form fieldset legend {
+    font: 700 2.4rem Archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid var(--color-line-in-white);
+}
+
+.login-form label {
+    color: var(--color-text-complement);
+}
+
+.login-form form {
+    background: var(--color-box-base);
+    width: 100%;
+    max-width: 74rem;
     border-radius: 0.8rem;
-    margin-right: 1.6rem;
-    font: 700 2.0rem Archivo;
+    margin: -3.2rem auto 3.2rem;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.login-form fieldset header{
+    display: flex;
+}
+
+.login-form fieldset header a{
+    text-decoration: none;
+    width: 10rem;
+    margin-left: -10rem;
+    color: var(--color-text-complement);
+}
+
+.login-form fieldset form button{
+    width: 100%;
+    height: 5.6rem;
+    background: var(--color-secundary);
+    color: var(--color-button-text);
+    border: 0;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: var(--color-button-text);
     transition: background-color 0.2s;
+    margin-top: 3.2rem;
 }
 
-.buttons-container a:first-child {
-    /* margin-right: 1.6rem; */
+.login-form fieldset form footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.buttons-container a img {
-    width: 4rem;
-    margin-right: 2.4rem;
+.login-form fieldset form footer a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: var(--color-text-complement);
 }
 
-.buttons-container a.study {
-    background: var(--color-primary-lighter);
-}
-
-.buttons-container a.give-classes {
-    background: var(--color-secundary);
-}
-
-.buttons-container a.study:hover {
-    background: var(--color-primary-light);
-}
-
-.buttons-container a.give-classes:hover {
-    background: var(--color-secundary-dark);
-}
-
-.total-connections {
-    font-size: 1.4rem;
-
+.login-form fieldset form footer div{
+    margin-top: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.total-connections img {
-    margin-left: 0.8rem;
+.login-form fieldset form footer div input{
+    margin-right: 0.8rem;
 }
 
-@media (min-width: 1100px) {
-    #page-login-content {
-        max-width: 1100px;
-        display: grid;
-        grid-template-rows: 350px 1fr;
-        grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: 
-            "logo hero hero"
-            "buttons buttons total"
-        ;
-    }
 
-    .logo-container {
-        grid-area: logo;
-        align-self: center;
-        text-align: left;
-        margin: 0;
-    }
-
-    .logo-container h2{
-        text-align: initial;
-        font-size: 3.6rem;
-    }
-
-    .logo-container img{
-        height: 100%;
-    }
-
-    .hero-image{
-        grid-area: hero;
-        justify-self: end;
-    }
-
-    .buttons-container{
-        grid-area: buttons;
-        justify-content: flex-start
-    }
-
-    .buttons-container a{
-        font-size: 2.4rem;
-    }
-
-    .total-connections{
-        grid-area: total;
-        justify-self: end;
-    }
-}
+/* @media (min-width: 1100px) {
+    
+} */
