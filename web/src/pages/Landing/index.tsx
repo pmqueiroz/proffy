@@ -58,7 +58,7 @@ function Landing() {
                     Total of {totalConnections} connections made  
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
                 </span>
-                <span className="total-connections">
+                <span className="logged-as">
                     Logged as {user?.email||'Guest'} 
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
                     <button onClick={handleSignOut}>sign out</button>

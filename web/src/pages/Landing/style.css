@@ -82,13 +82,23 @@
 
 .total-connections {
     font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logged-as{
+    font-size: 1.4rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.total-connections img {
+.logged-as img{
+    margin-left: 0.8rem;
+}
+
+.total-connections img{
     margin-left: 0.8rem;
 }
 
@@ -96,11 +106,12 @@
     #page-landing-content {
         max-width: 1100px;
         display: grid;
-        grid-template-rows: 350px 1fr;
+        grid-template-rows: 350px 1fr 0.2fr;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
             "logo hero hero"
             "buttons buttons total"
+            "footer footer footer"
         ;
     }
 
@@ -137,5 +148,9 @@
     .total-connections{
         grid-area: total;
         justify-self: end;
+    }
+    .logged-as{
+        grid-area: footer;
+        text-align: center;
     }
 }
