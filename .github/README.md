@@ -238,12 +238,12 @@ Version 2.0 Features
 - [ ] User auth
     - [x] Web
     - [ ] Mobile
+- [x] User logout
+- [x] Save favorite teachers
 - [ ] Password recovery
 - [ ] Teacher profile
 - [ ] Pagination of classes result
 - [ ] Show teacher schedule hours
-- [ ] Save favorite teachers
-- [ ] User logout
 - [ ] Deploy
 
 
