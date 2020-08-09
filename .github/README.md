@@ -231,6 +231,9 @@ Version 2.0 Features
 
 - [x] Splash screen
 - [x] Extended layout
+    - [x] Login
+    - [x] Sign In
+    - [ ] Succeed Screen
 - [ ] User auth
     - [x] Web
         - [x] Remember me
