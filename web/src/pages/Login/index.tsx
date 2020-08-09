@@ -6,6 +6,7 @@ import Input from '../../components/Input';
 import logoImg from '../../assets/images/logo.svg';
 
 import './style.css';
+import { Link } from 'react-router-dom';
 
 function Login() {
     const { signed, signIn } = useAuth();
@@ -31,7 +32,9 @@ function Login() {
                             <form onSubmit={handleSignIn}>
                                 <header>
                                     <legend>Login</legend>
-                                    <a href="#">Sign Up</a> 
+                                    <Link to='/signup' className="signup-button">
+                                       <label>Sign Up</label>
+                                    </Link>
                                 </header>
                                 <div className="input-container">
                                     <Input 

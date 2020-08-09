@@ -4,8 +4,12 @@ export async function up(knex: Knex){
     return knex.schema.createTable('accounts', table => {
         table.increments('id').primary();
         table.string('token').notNullable;
+        table.string('username').notNullable;
         table.string('email').notNullable;
         table.string('password').notNullable;
+        table.string('avatar').notNullable;
+        table.string('whatsapp').notNullable;
+        table.string('bio').notNullable;
     })
 }
 

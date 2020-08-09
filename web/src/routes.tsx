@@ -6,6 +6,7 @@ import LoginError from './pages/LogginError';
 import TeacherList from './pages/TeacherList';
 import Login from './pages/Login';
 import TeacherForm from './pages/TeacherForm';
+import SignUp from './pages/SignUp';
 
 function Routes() {
     const { signed } = useAuth();
@@ -23,6 +24,7 @@ function Routes() {
             <BrowserRouter>
                 <Route path="/" exact component={Login}/>
                 <Route path="/study" component={LoginError}/>
+                <Route path="/signup" component={SignUp}/>
                 <Route path="/give-classes" component={LoginError}/>
             </BrowserRouter>
         );

@@ -13,18 +13,22 @@ export default class ConnectionsController {
     async getCredentials(request: Request, response: Response){
         const { token } = request.body;
 
-        const accountResponse = await db('accounts').select('email').where('token', '=', token);
+        const accountResponse = await db('accounts').select(['email', 'username']).where('token', '=', token);
 
         return response.json(accountResponse[0]);
     }
 
     async createAccount(request: Request, response: Response){
-        const { token, email, password } = request.body;
+        const { token, email, password, username, avatar, whatsapp, bio } = request.body;
 
         await db('accounts').insert({
-            token, 
-            email, 
-            password
+            token,
+            username,
+            email,
+            password,
+            avatar,
+            whatsapp,
+            bio
         })
 
         return response.status(201).send();

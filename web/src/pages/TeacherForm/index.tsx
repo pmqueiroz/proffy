@@ -196,7 +196,7 @@ function TeacherForm(){
                             Fill all the fields
                         </p>
                         <button type="submit">
-                            Sign Up
+                            Register Class
                         </button>
                     </footer>
                 </form>

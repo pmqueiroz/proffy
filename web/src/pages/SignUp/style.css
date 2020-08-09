@@ -1,13 +1,13 @@
-#page-sign-up-form {
+#page-teacher-form {
     width: 100vw;
     height: 100vh;
 }
 
-#page-sign-up-form .page-header .header-content {
+#page-teacher-form .page-header .header-content {
     margin-bottom: 6.4rem;
 }
 
-#page-sign-up-form main {
+#page-teacher-form main {
     background: var(--color-box-base);
     width: 100%;
     max-width: 74rem;
@@ -17,16 +17,16 @@
     overflow: hidden;
 }
 
-#page-sign-up-form main fieldset {
+#page-teacher-form main fieldset {
     border: 0;
     padding: 0 2.4rem;
 }
 
-#page-sign-up-form main fieldset + fieldset {
+#page-teacher-form main fieldset + fieldset {
     margin-top: 6.4rem;
 }
 
-#page-sign-up-form main fieldset legend {
+#page-teacher-form main fieldset legend {
     font: 700 2.4rem Archivo;
     color: var(--color-text-title);
     margin-bottom: 2.4rem;
@@ -38,7 +38,7 @@
     border-bottom: 1px solid var(--color-line-in-white);
 }
 
-#page-sign-up-form main fieldset legend button {
+#page-teacher-form main fieldset legend button {
     background: none;
     border: none;
     color: var(--color-primary);
@@ -47,27 +47,27 @@
     transition: color 0.2s;
 }
 
-#page-sign-up-form main fieldset legend button:hover {
+#page-teacher-form main fieldset legend button:hover {
     color: var(--color-primary-dark);
 }
 
-#page-sign-up-form main fieldset .input-block + .textarea-block,
-#page-sign-up-form main fieldset .select-block + .input-block {
+#page-teacher-form main fieldset .input-block + .textarea-block,
+#page-teacher-form main fieldset .select-block + .input-block {
     margin-top: 2.4rem;
 }
 
-#page-sign-up-form main label {
+#page-teacher-form main label {
     color: var(--color-text-complement);
 }
 
-#page-sign-up-form main footer {
+#page-teacher-form main footer {
     padding: 4rem 2.4rem;
     background: var(--color-box-footer);
     border-top: 1px solid var(--color-line-in-white);
     margin-top: 6.4rem;
 }
 
-#page-sign-up-form main footer p {
+#page-teacher-form main footer p {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,11 +76,11 @@
     color: var(--color-text-complement);
 }
 
-#page-sign-up-form main footer p img{
+#page-teacher-form main footer p img{
     margin-right: 2rem;
 }
 
-#page-sign-up-form main footer button {
+#page-teacher-form main footer button {
     width: 100%;
     height: 5.6rem;
     background: var(--color-secundary);
@@ -98,45 +98,45 @@
 
 }
 
-#page-sign-up-form main footer button:hover {
+#page-teacher-form main footer button:hover {
     background: var(--color-secundary-dark);
 }
 
 @media (min-width: 700px){
-    #page-sign-up-form{
+    #page-teacher-form{
         max-width: 100vw;
     }
 
-    #page-sign-up-form .page-header .header-content {
+    #page-teacher-form .page-header .header-content {
         margin-bottom: 0;
     }
 
-    #page-sign-up-form main fieldset {
+    #page-teacher-form main fieldset {
         padding: 0 6.4rem;
     }
 
-    #page-sign-up-form main .schedule-item{
+    #page-teacher-form main .schedule-item{
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
         column-gap: 1.6rem;
     }
 
-    #page-sign-up-form main .schedule-item .input-block{
+    #page-teacher-form main .schedule-item .input-block{
         margin-top: 0!important;
     }
 
-    #page-sign-up-form main footer {
+    #page-teacher-form main footer {
         padding: 4.0rem 6.4rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
 
-    #page-sign-up-form main footer p {
+    #page-teacher-form main footer p {
         justify-content: space-between;
     }
 
-    #page-sign-up-form main footer button {
+    #page-teacher-form main footer button {
         width: 20rem;
         margin-top: 0;
     }

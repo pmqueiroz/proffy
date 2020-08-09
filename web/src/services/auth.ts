@@ -12,7 +12,7 @@ export function signIn(): Promise<Response> {
             resolve({
                 token: 'alkdjalkjdq29ueqklad12laskjdq12psdkweqpwdaklsdaw',
                 user: {
-                    name: 'Pedro',
+                    name: 'Victória',
                     email: 'contato@pmqueiroz.me',
                 },
             });
