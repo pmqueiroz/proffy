@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 import logoImg from '../../assets/images/logo.svg';
@@ -53,11 +53,15 @@ function Landing() {
                         <img src={giveClassesIcon} alt="Give Lessons"/>
                         Teach
                     </Link>
-                <button onClick={signOut} type="button">{user?.name}{" "}Log Out</button>
                 </div>
                 <span className="total-connections">
                     Total of {totalConnections} connections made  
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
+                </span>
+                <span className="total-connections">
+                    Logged as {user?.name} 
+                    <img src={purpleHeartIcon} alt="Purple Heart"/>
+                    <a onClick={signOut}>sign out</a>
                 </span>
             </div>
         </div>

@@ -233,7 +233,7 @@ Version 2.0 Features
 - [x] Extended layout
 - [ ] User auth
     - [x] Web
-        - [] Remember me
+        - [x] Remember me
     - [ ] Mobile
 - [ ] Password recovery
 - [ ] Teacher profile
