@@ -2,21 +2,23 @@ import React, { createContext, useState, useContext, useEffect } from 'react';
 import * as auth from '../services/auth';
 
 interface User {
-    name: string;
     email: string;
+    password: string;
 }
 
 interface AuthContextData {
     signed: boolean;
     user: User | null;
-    signIn(): Promise<void>;
+    signIn(email: string, username:string): Promise<void>;
     signOut(): void;
+    handleToggleRemember(): void;
 }
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export const AuthProvider: React.FunctionComponent = ({ children }) => {
     const [user, setUser] = useState<User | null>(null);
+    const [remember, setRemember] = useState(false);
 
     useEffect(() => {
         async function  loadStoragedData (){
@@ -31,14 +33,19 @@ export const AuthProvider: React.FunctionComponent = ({ children }) => {
         loadStoragedData();
     }, []);
 
-    async function signIn() {
-        const response = await auth.signIn();
+    function handleToggleRemember(){
+        setRemember(!remember);
+    }
 
+    async function signIn(username:string, email: string) {
+        const response = await auth.signIn(username, email);
+        console.log(response);
         setUser(response.user);
 
-
-        localStorage.setItem('@proffy:user', JSON.stringify(response.user));
-        localStorage.setItem('@proffy:token', response.token);
+        if (remember){
+            localStorage.setItem('@proffy:user', JSON.stringify(response.user));
+            localStorage.setItem('@proffy:token', response.token);
+        }
     }
 
     function signOut() {
@@ -49,7 +56,7 @@ export const AuthProvider: React.FunctionComponent = ({ children }) => {
 
     return(
 
-        <AuthContext.Provider value={{signed: !!user, user, signIn, signOut}}>
+        <AuthContext.Provider value={{signed: !!user, user, signIn, signOut, handleToggleRemember}}>
             {children}
         </AuthContext.Provider>
     );

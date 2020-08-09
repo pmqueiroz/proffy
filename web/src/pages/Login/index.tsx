@@ -1,4 +1,4 @@
-import React, { FormEvent } from 'react';
+import React, { FormEvent, useState } from 'react';
 import { useAuth } from '../../contexts/auth';
 
 import Input from '../../components/Input';
@@ -9,13 +9,16 @@ import './style.css';
 import { Link } from 'react-router-dom';
 
 function Login() {
-    const { signed, signIn } = useAuth();
+    const { signed, signIn, handleToggleRemember } = useAuth();
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
 
     console.log(signed);
 
     function handleSignIn(e: FormEvent){
         e.preventDefault();
-        signIn();
+        signIn(email, password);
     }
 
     return (
@@ -40,18 +43,29 @@ function Login() {
                                     <Input 
                                         name="email" 
                                         placeholder="example@youremail.com"
+                                        value={email} 
+                                        onChange={(e) => {
+                                            setEmail(e.target.value)
+                                        }} 
                                         />
                                     <Input 
                                         name="password" 
                                         placeholder="password"
+                                        type="password"
+                                        value={password} 
+                                        onChange={(e) => {
+                                            setPassword(e.target.value)
+                                        }} 
                                         />
                                 </div>
                                 <footer>
                                     <div>
-                                        <input type="checkbox" name="remember"/>
+                                        <input onChange={handleToggleRemember} type="checkbox" name="remember"/>
                                         <label htmlFor="remember">Remember</label>
                                     </div>
-                                    <a href="#">Forgot my password</a>
+                                    <Link to='/signup' className="signup-button">
+                                       <label>Forgot my password</label>
+                                    </Link>
                                 </footer>
                                 <button type="submit">Login</button>
                             </form>

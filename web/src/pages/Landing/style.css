@@ -10,10 +10,13 @@
     background-color: var(--color-primary);
 }
 
-#page-landing-content span a{
+#page-landing-content span button{
     margin-left: 0.8rem;
     cursor: pointer;
     text-decoration: underline;
+    color: var(--color-text-in-primary);
+    background: none;
+    border: 0;
 }
 
 .hero-image {

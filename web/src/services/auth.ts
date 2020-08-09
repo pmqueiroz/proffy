@@ -1,21 +1,11 @@
-interface Response {
-    token: string;
-    user: {
-        name: string;
-        email: string;
-    };
-}
 
-export function signIn(): Promise<Response> {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve({
-                token: 'alkdjalkjdq29ueqklad12laskjdq12psdkweqpwdaklsdaw',
+export function signIn(email: string, password:string,){
+
+    return ({
+                token: password+email, // that will be change ofc
                 user: {
-                    name: 'Victória',
-                    email: 'contato@pmqueiroz.me',
+                    email: email,
+                    password: password,
                 },
             });
-        }, 200);
-    });
 }
