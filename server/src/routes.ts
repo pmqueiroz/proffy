@@ -17,7 +17,7 @@ routes.get('/connections', connectionsControllers.index);
 routes.post('/connections', connectionsControllers.create);
 
 routes.get('/accounts', accountControllers.getToken);
-routes.get('/accounts/cleiton', accountControllers.getCredentials);
+routes.get('/accounts/credentials', accountControllers.getCredentials);
 routes.post('/accounts', accountControllers.createAccount);
 
 export default routes;

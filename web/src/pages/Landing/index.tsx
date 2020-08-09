@@ -14,6 +14,7 @@ import './style.css';
 
 function Landing() {
     const [totalConnections, setTotalConnections] = useState(0);
+    const [userName, setUserName] = useState();
 
     const { user, signOut } = useAuth();
 
@@ -27,7 +28,15 @@ function Landing() {
 
             setTotalConnections(total);
         })
+
+        api.get('accounts/credentials', {params: {email: user?.email}}).then(response => {
+            const { username } = response.data;
+
+            setUserName(username);
+            console.log(username);
+        })
     }, []);
+
 
     return (
         <div id="page-landing">
@@ -59,7 +68,7 @@ function Landing() {
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
                 </span>
                 <span className="logged-as">
-                    Logged as {user?.email||'Guest'} 
+                    Logged as {userName||'Guest'} 
                     <img src={purpleHeartIcon} alt="Purple Heart"/>
                     <button onClick={handleSignOut}>sign out</button>
                 </span>

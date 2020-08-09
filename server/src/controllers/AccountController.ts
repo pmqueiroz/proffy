@@ -1,7 +1,7 @@
 import {Request, Response} from 'express';
 import db from '../database/connection';
 
-export default class ConnectionsController {
+export default class AccountController {
     async getToken(request: Request, response: Response){
         const { email, password } = request.body;
 
@@ -11,9 +11,9 @@ export default class ConnectionsController {
     }
 
     async getCredentials(request: Request, response: Response){
-        const { token } = request.body;
+        const { email } = request.query;
 
-        const accountResponse = await db('accounts').select(['email', 'username']).where('token', '=', token);
+        const accountResponse = await db('accounts').select('username').where('email', '=', [email]);
 
         return response.json(accountResponse[0]);
     }

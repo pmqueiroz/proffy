@@ -12,7 +12,6 @@ import './style.css';
 function TeacherForm(){
     const history = useHistory();
 
-    const [token, setToken] = useState('');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
