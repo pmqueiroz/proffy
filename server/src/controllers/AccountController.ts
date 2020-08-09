@@ -19,10 +19,9 @@ export default class ConnectionsController {
     }
 
     async createAccount(request: Request, response: Response){
-        const { token, email, password, username, avatar, whatsapp, bio } = request.body;
+        const { email, password, username, avatar, whatsapp, bio } = request.body;
 
         await db('accounts').insert({
-            token,
             username,
             email,
             password,

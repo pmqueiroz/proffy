@@ -25,7 +25,6 @@ function TeacherForm(){
         e.preventDefault();
 
         api.post('accounts', {
-            token,
             username,
             email,
             password,
@@ -48,17 +47,6 @@ function TeacherForm(){
                 <form onSubmit={handleCreateAccount}>
                     <fieldset>
                         <legend>Your info</legend>
-
-                        {/* If you reading this i'm sorry i'll fix that lmao */}
-                        <Input
-                            name="token" 
-                            label="Token" 
-                            value={token} 
-                            onChange={(e) => {
-                                setToken(e.target.value)
-                            }} 
-                        />
-
                         <Input 
                             name="name" 
                             label="Complete Name" 
@@ -70,16 +58,17 @@ function TeacherForm(){
 
                         <Input 
                             name="email" 
-                            label="Password" 
-                            value={email} 
+                            label="Email" 
+                            value={email}
                             onChange={(e) => {
                                 setEmail(e.target.value)
                             }} 
                         />
 
                         <Input 
-                            name="email" 
-                            label="Email" 
+                            name="Password" 
+                            label="Password" 
+                            type="password"
                             value={password} 
                             onChange={(e) => {
                                 setPassword(e.target.value)
