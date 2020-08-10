@@ -14,11 +14,9 @@
 *sqlite
 
 # misc
-/web/.DS_Store
-/web/.env.local
-/web/.env.development.local
-/web/.env.test.local
-/web/.env.production.local
+/server/.DS_Store
+/server/.env
+/server/.env.example
 
 /web/npm-debug.log*
 /web/yarn-debug.log*

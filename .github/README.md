@@ -128,7 +128,10 @@ $ yarn add @types/cors -D
 $ yarn add @types/express -D
 $ yarn add ts-node-dev -D
 $ yarn add knex
-$ yarn add sqlite3
+
+# Proffy Version 2.0
+$ yarn add pg
+$ yarn add dotenv
 ```
 
 ##### Mobile
@@ -240,6 +243,7 @@ Version 2.0 Features
     - [ ] Mobile
 - [x] User logout
 - [x] Save favorite teachers
+- [ ] Rating system
 - [ ] Password recovery
 - [ ] Teacher profile
 - [ ] Pagination of classes result

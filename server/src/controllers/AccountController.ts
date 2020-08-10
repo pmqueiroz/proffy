@@ -28,7 +28,7 @@ export default class AccountController {
             avatar,
             whatsapp,
             bio
-        })
+        }).returning('id');
 
         return response.status(201).send();
     }
